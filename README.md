@@ -1,5 +1,6 @@
-# WB01
-Creality Wifi Box OpenWrt 23.05.0 firmware and Octoprint 1.9.3 installation
+# cb-wb01
+Creality Box WB01 OpenWrt firmware and Octoprint installation.
+See branches for more details
 
 ## 🔝 Credits:
 
