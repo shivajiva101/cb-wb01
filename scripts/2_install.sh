@@ -64,6 +64,17 @@ echo "### Installing dependencies ###"
 echo "###############################"
 echo " "
 
+echo "Updating distfeeds.conf"
+rm /etc/opkg/distfeeds.conf;
+cat << "EOF" > /etc/opkg/distfeeds.conf
+src/gz openwrt_core https://github.com/shivajiva101/WB01/raw/main/packages/ramips/mt76x8/packages
+src/gz openwrt_base https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/base
+src/gz openwrt_luci https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/luci
+src/gz openwrt_packages https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/packages
+src/gz openwrt_routing https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/routing
+src/gz openwrt_telephony https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/telephony
+EOF
+
 opkg update
 opkg install gcc make unzip htop wget-ssl git-http v4l-utils mjpg-streamer-input-uvc mjpg-streamer-output-http mjpg-streamer-www ffmpeg
 uci delete mjpg-streamer.core.username
