@@ -11,7 +11,7 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
 - **Peripheral**: Genesys Logic GL850G 2 port USB 2.0 hub  
 - **I/O**: 1x 10/100 Ethernet port, microSD SD-XC Class 10 slot, 4x LEDs, 2x USB 2.0 ports, micro USB input (for power only), reset button  
 - **FCC ID**: 2AXH6CREALITY-BOX  
-- **UART**: test pads: (square on silkscreen) 3V3, TX, RX, GND; default baudrate: 57600
+- **UART**: test pads: (square on silkscreen) 3V3, TX, RX, GND; default baudrate: 57600 (https://hackaday.com/wp-content/uploads/2020/12/wifibox_serialport.png?resize=250)
 
 ## Firmware Instructions
 
@@ -51,16 +51,16 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   3. With the box powered off, plug the USB stick in the box  
   4. Press and hold the reset button.  
   5. While holding the reset button power on the box and keep it pressed for about 6-10sec  
-  6. Green Led should start flashing while the box installs the firmware  
+  6. Green LED should start flashing while the box installs the firmware  
   7. Wait a few minutes until you see it on the network (`OctoWrt` WiFi AP )  
   
   **Restoring to Stock**  
-  1. Extract the `root_uImage` file from the `cxsw_update.tar.bz2`
+  1. Download and extract the `root_uImage` file from the `cxsw_update.tar.bz2` ([link](https://www.crealitycloud.com/software-firmware/box/creality-box)) 
   2. Put it on a fat32 formatted USB stick (not uSD card)  
   3. With the box powered off, plug the USB stick in the box  
   4. Press and hold the reset button.  
   5. While holding the reset button power on the box and keep it pressed for about 6-10sec  
-  6. Green Led should start flashing while the box installs the firmware  
+  6. Green LED should start flashing while the box installs the firmware  
   7. Wait a few minutes until you see the Creality AP on the network
      
   Once flashed setup internet access on the box (either Wi-Fi client or wired connection)
@@ -88,14 +88,14 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
 
   </details>
   
-  #### 2. Execute format script:
+  #### 1. Execute format script:
   ```
   cd /tmp
   wget https://github.com/shivajiva101/cb-wb01/raw/main/scripts/1_format.sh
   chmod +x 1_format.sh
   ./1_format.sh
   ```
-  #### 3. Execute install script:
+  #### 2. Execute install script:
   ```
   cd /tmp
   wget https://github.com/shivajiva101/cb-wb01/raw/main/scripts/2_install.sh
@@ -103,7 +103,7 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   ./2_install.sh
   ```
     
-  #### 4. Access Octoprint UI on port 5000
+  #### 3. Access Octoprint UI on port 5000
   
   ```
   http://creality-box-ip:5000
