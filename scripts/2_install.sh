@@ -66,14 +66,7 @@ echo " "
 
 echo "Updating distfeeds.conf"
 rm /etc/opkg/distfeeds.conf;
-cat << "EOF" > /etc/opkg/distfeeds.conf
-src/gz openwrt_core https://github.com/shivajiva101/WB01/raw/main/packages/ramips/mt76x8/packages
-src/gz openwrt_base https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/base
-src/gz openwrt_luci https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/luci
-src/gz openwrt_packages https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/packages
-src/gz openwrt_routing https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/routing
-src/gz openwrt_telephony https://github.com/shivajiva101/WB01/raw/main/packages/mipsel_24kc/telephony
-EOF
+wget https://github.com/shivajiva101/cb-wb01/raw/main/config/distfeeds.conf -P /etc/opkg
 
 opkg update
 opkg install gcc make unzip htop wget-ssl git-http v4l-utils mjpg-streamer-input-uvc mjpg-streamer-output-http mjpg-streamer-www ffmpeg
@@ -90,11 +83,13 @@ echo "############################"
 echo "### Installing Octoprint ###"
 echo "############################"
 echo " "
-echo " Sit tight... "
+echo " This is going to take a while... "
 echo " "
 
+echo "Cloning source..."
 git clone https://github.com/shivajiva101/OctoPrint.git src
 cd src 
+echo "Starting pip install..."
 ../venv/bin/pip install .
 cd ~
 
