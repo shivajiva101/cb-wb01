@@ -1,5 +1,17 @@
 # cb-wb01
-Creality Box WB01 OpenWrt firmware and Octoprint installation.
+Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is based on the work of figgyc and Ihrapsa and is just a placeholder until OpenWrt is in active development/maintenance again.
+
+**Specifications:**
+
+ From https://github.com/figgyc/openwrt/tree/wb01
+
+- **SoC**: MediaTek MT7688AN @ 580 MHz  
+- **Flash**: BoyaMicro BY25Q128AS (16 MiB, SPI NOR)  
+- **RAM**: 128 MiB DDR2 (Winbond W971GG6SB-25)  
+- **Peripheral**: Genesys Logic GL850G 2 port USB 2.0 hub  
+- **I/O**: 1x 10/100 Ethernet port, microSD SD-XC Class 10 slot, 4x LEDs, 2x USB 2.0 ports, micro USB input (for power only), reset button  
+- **FCC ID**: 2AXH6CREALITY-BOX  
+- **UART**: test pads: (square on silkscreen) 3V3, TX, RX, GND; default baudrate: 57600
 
 ## Firmware Instructions
 
