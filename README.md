@@ -1,5 +1,5 @@
 # cb-wb01
-Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is based on the work of figgyc and Ihrapsa and is just a placeholder until OpenWrt is in active development/maintenance again.
+Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is based on the work of figgyc and Ihrapsa and is just a placeholder until OctoWrt is in active development/maintenance again.
 
 **Specifications:**
 
@@ -206,7 +206,7 @@ uci delete mjpg-streamer.core.password
 
 * **Python 3**:
 
-⚠️ _It is recommended to use the python 3 approach since python 2 got deprecated since January 1st, 2020. However, if you want older versions of Octoprint, python 2 approach might be the only way._
+⚠️ _It is recommended to use the python 3 approach since python 2 was deprecated on January 1st, 2020. However, if you want older versions of Octoprint, python 2 approach might be the only way._
 
 Install python 3 packages
 ```
@@ -273,7 +273,7 @@ reboot
 ```
 
 ▶️ _**Note!**_  
-_Booting on the last versions takes a while (~5 minutes). Once booted however, everything works as expected. If you care that much about this you can install older versions (v1.0.0 for example) that are much lighter but are not plugin enabled. Only Temps, Control, Webcam and Gcode preview._
+_Booting on the lastest versions takes a while (~5 minutes). Once booted however, everything works as expected. If you care that much about this you can install older versions (v1.0.0 for example) that are much lighter but are not plugin enabled. Only Temps, Control, Webcam and Gcode preview._
   
 #### 8. First setup
   
@@ -326,6 +326,6 @@ For **webcam** support:
 
 ## 🔝 Credits:
 
-<img width=20 align=center src="https://user-images.githubusercontent.com/40600040/128488057-52b688f7-25d5-46e1-9ac8-bb5309384d98.png">  **[Irhapsa](https://github.com/ihrapsa)** for [OctoWrt](https://github.com/ihrapsa/OctoWrt) and [KlipperWrt](https://github.com/ihrapsa/KlipperWrt)   
 <img width=20 align=center src="https://user-images.githubusercontent.com/40600040/128488057-52b688f7-25d5-46e1-9ac8-bb5309384d98.png">  **George** a.k.a [figgyc](https://github.com/figgyc) for porting OpenWrt to this device   
 <img width=20 align=center src="https://user-images.githubusercontent.com/40600040/128488418-c703c383-1835-49a0-aa41-eadee0671ab7.png">  **Gina and co.** for creating and developing [OctoPrint](https://github.com/OctoPrint/OctoPrint)  
+<img width=20 align=center src="https://user-images.githubusercontent.com/40600040/128488057-52b688f7-25d5-46e1-9ac8-bb5309384d98.png">  **[Irhapsa](https://github.com/ihrapsa)** for [OctoWrt](https://github.com/ihrapsa/OctoWrt) and [KlipperWrt](https://github.com/ihrapsa/KlipperWrt)   
