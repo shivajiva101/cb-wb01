@@ -77,6 +77,8 @@ uci commit mjpg-streamer
 opkg install python3 python3-pip python3-dev python3-psutil python3-pillow python3-tornado
 pip install --upgrade pip
 pip install --upgrade setuptools
+pip install virtualenv
+virtualenv venv
 
 echo " "
 echo "############################"
