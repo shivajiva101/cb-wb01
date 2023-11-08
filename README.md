@@ -1,5 +1,5 @@
 # cb-wb01
-Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is based on the work of figgyc and Ihrapsa and is just a placeholder until OctoWrt is in active development/maintenance again. 
+Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is based on the work of figgyc and Ihrapsa and is just a placeholder until OctoWrt is in active development/maintenance again. <b>IMPORTANT: this project uses a version of OctoPrint that has the argon2-cffi dependancy removed, this means the password hashing for users will not be as secure as versions using argon2!</b>
 
 ## How to use this repository
 Select the branch that matches the firmware you want to use and read the instructions.
