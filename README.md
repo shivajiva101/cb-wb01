@@ -1,5 +1,5 @@
 # cb-wb01
-Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is based on the work of figgyc and Ihrapsa and is just a placeholder until OctoWrt is in active development/maintenance again. <b>IMPORTANT: this project uses a version of OctoPrint that has the argon2-cffi dependancy removed, this means the password hashing for users will not be as secure as versions using argon2!</b>
+Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is based on the work of figgyc and Ihrapsa and is just a placeholder until OctoWrt is in active development/maintenance again. <b>IMPORTANT: this project uses a version of OctoPrint that has the argon2-cffi dependancy removed, this means the password hashing for users will not be as secure as versions using argon2!</b> There isn't any real issue with this if your device is sat behind a firewall, a hacker would have to gain access to your network, find the stored hashes and then spend time resolving the actual passwords from the hash file. All versions of OctoPrint before 1.9.0 used standard password hashing techniques.
 
 **Specifications:**
 
