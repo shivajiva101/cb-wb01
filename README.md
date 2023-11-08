@@ -90,14 +90,12 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   
   #### 1. Execute format script:
   ```
-  cd /tmp
   wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/1_format.sh
   chmod +x 1_format.sh
   ./1_format.sh
   ```
   #### 2. Execute install script:
   ```
-  cd /tmp
   wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/2_install.sh
   chmod +x 2_install.sh
   ./2_install.sh
