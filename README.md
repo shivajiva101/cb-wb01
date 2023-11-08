@@ -93,12 +93,14 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/1_format.sh
   chmod +x 1_format.sh
   ./1_format.sh
+
   ```
   #### 2. Execute install script:
   ```
   wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/2_install.sh
   chmod +x 2_install.sh
   ./2_install.sh
+
   ```
     
   #### 3. Access Octoprint UI on port 5000
@@ -145,6 +147,7 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/1_format.sh
   chmod +x 1_format.sh
   ./1_format.sh
+  
   ```
    Then reboot when instructed!
  
@@ -158,6 +161,7 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   mkswap /overlay/swap.page;
   swapon /overlay/swap.page;
   mount -o remount,size=256M /tmp;
+  
   ```
   ```
   rm /etc/rc.local;
@@ -170,6 +174,7 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   mount -o remount,size=256M /tmp
   exit 0
   EOF
+  
   ```
   
 </details>
@@ -184,6 +189,7 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
 ```
 rm /etc/opkg/distfeeds.conf;
 wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/config/distfeeds.conf -P /etc/opkg
+
 ```
   
 #### 2. Install OpenWrt dependencies:
@@ -192,14 +198,8 @@ wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/config/distfeeds.conf -
 opkg update
 opkg install gcc make unzip htop wget-ssl git-http
 opkg install v4l-utils mjpg-streamer-input-uvc mjpg-streamer-output-http mjpg-streamer-www ffmpeg
-```
-By default mjpg-streamer comes with username=openwrt and password=openwrt. If you don't want them do:
 
 ```
-uci delete mjpg-streamer.core.username
-uci delete mjpg-streamer.core.password
-```
-
 ------------------------------
 
 * **Python 3**:
@@ -213,6 +213,7 @@ pip install --upgrade setuptools
 pip install --upgrade pip
 pip install virtualenv
 virtualenv venv
+
 ```
  
 --------------------
@@ -223,6 +224,7 @@ virtualenv venv
 git clone https://github.com/shivajiva101/OctoPrint.git src
 cd src
 ../venv/bin/pip install .
+
 ```
 
 #### 4. Create octoprint service:
@@ -250,6 +252,7 @@ cd src
       procd_close_instance
   }
   EOF
+
   ```
   </details>
   
@@ -257,17 +260,20 @@ cd src
 
 ```
 chmod +x /etc/init.d/octoprint
+
 ```
 #### 6. Enable the service:
 
 ```
 service octoprint enable
+
 ``` 
 
 #### 7. Reboot and wait a while
 
 ```
 reboot
+
 ```
 
 ▶️ _**Note!**_  
@@ -280,9 +286,9 @@ _Booting on the lastest versions takes a while (~5 minutes). Once booted however
   
 Access Octoprint UI on port 5000
   
-```
-http://creality-box-ip:5000
-```
+
+`http://creality-box-ip:5000`
+
   
 When prompted use thefollowing **server commands**:
 
@@ -312,6 +318,7 @@ For **webcam** support:
     
     ```
     /usr/bin/ffmpeg
+    
     ```
     
    </details>
