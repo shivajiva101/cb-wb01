@@ -63,8 +63,10 @@ extroot(){
 	echo -ne 'Making extroot...     [=================================>](100%)\r'
 	echo -ne '\n'
 
-	echo "Please reboot then run the second script!";
+	echo "Please reboot and run the second script!";
 }
 
 format;
 extroot;
+read -p "Press [ENTER] to reboot...or [ctrl+c] to exit"
+reboot
