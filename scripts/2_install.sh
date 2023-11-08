@@ -34,9 +34,9 @@ echo " "
 read -p "Press [ENTER] to Continue ...or [ctrl+c] to exit"
 
 echo " "
-echo "#################"
-echo "###   SWAP    ###"
-echo "#################"
+echo "   #################"
+echo "   ###   SWAP    ###"
+echo "   #################"
 echo " "
 
 echo "Creating swap file"
@@ -59,9 +59,9 @@ exit 0
 EOF
 
 echo " "
-echo "###############################"
-echo "### Installing dependencies ###"
-echo "###############################"
+echo "   ###############################"
+echo "   ### Installing dependencies ###"
+echo "   ###############################"
 echo " "
 
 echo "Updating distfeeds.conf"
@@ -81,11 +81,14 @@ pip install virtualenv
 virtualenv venv
 
 echo " "
-echo "############################"
-echo "### Installing Octoprint ###"
-echo "############################"
+echo "   ############################"
+echo "   ### Installing Octoprint ###"
+echo "   ############################"
 echo " "
 echo " This is going to take a while... "
+echo " No seriously, it will look like it's frozen"
+echo " for extended periods of time but it will"
+echo " eventually complete!"
 echo " "
 
 echo "Cloning source..."
@@ -96,9 +99,9 @@ echo "Starting pip install..."
 cd ~
 
 echo " "
-echo "##################################"
-echo "### Creating Octoprint service ###"
-echo "##################################"
+echo "   ##################################"
+echo "   ### Creating Octoprint service ###"
+echo "   ##################################"
 echo " "
 
 cat << "EOF" > /etc/init.d/octoprint
@@ -125,9 +128,9 @@ chmod +x /etc/init.d/octoprint
 /etc/init.d/octoprint enable
 
 echo " "
-echo "##################################"
-echo "### Reboot and wait a while... ###"
-echo "##################################"
+echo "  ##################################"
+echo "  ### Reboot and wait a while... ###"
+echo "  ##################################"
 echo " "
 read -p "Press [ENTER] to reboot...or [ctrl+c] to exit"
 
