@@ -90,14 +90,14 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   
   #### 1. Execute format script:
   ```
-  wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/1_format.sh
+  wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0-137/scripts/1_format.sh
   chmod +x 1_format.sh
   ./1_format.sh
 
   ```
   #### 2. Execute install script:
   ```
-  wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/2_install.sh
+  wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0-137/scripts/2_install.sh
   chmod +x 2_install.sh
   ./2_install.sh
 
@@ -140,11 +140,11 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   
 * **OpenWrt**: Make sure you have OpenWrt firmware flashed. Follow the guide above -> Once flashed setup Wi-Fi client or wired connection for internet access on the box
 
-* **Format**: execute [this](https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/1_format.sh) script. Make sure you have a microsd plugged in!
+* **Format**: execute [this](https://github.com/shivajiva101/cb-wb01/raw/23.05.0-137/scripts/1_format.sh) script. Make sure you have a microsd plugged in!
   
   ```
   cd ~
-  wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/1_format.sh
+  wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0-137/scripts/1_format.sh
   chmod +x 1_format.sh
   ./1_format.sh
   
@@ -188,7 +188,7 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
 
 ```
 rm /etc/opkg/distfeeds.conf;
-wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/config/distfeeds.conf -P /etc/opkg
+wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0-137/config/distfeeds.conf -P /etc/opkg
 
 ```
   
