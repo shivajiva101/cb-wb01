@@ -66,7 +66,7 @@ echo " "
 
 echo "Updating distfeeds.conf"
 rm /etc/opkg/distfeeds.conf;
-wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0/config/distfeeds.conf -P /etc/opkg
+wget https://github.com/shivajiva101/cb-wb01/raw/23.05.0-137/config/distfeeds.conf -P /etc/opkg
 
 opkg update
 opkg install gcc make unzip htop wget-ssl git-http v4l-utils mjpg-streamer-input-uvc mjpg-streamer-output-http mjpg-streamer-www ffmpeg
