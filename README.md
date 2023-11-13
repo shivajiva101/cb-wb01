@@ -140,7 +140,7 @@ Creality Box WB01 OpenWrt firmware and Octoprint installation. This project is b
   
 * **OpenWrt**: Make sure you have OpenWrt firmware flashed. Follow the guide above -> Once flashed setup Wi-Fi client or wired connection for internet access on the box
 
-* **Format**: execute [this](https://github.com/shivajiva101/cb-wb01/raw/23.05.0/scripts/1_format.sh) script. Make sure you have a microsd plugged in!
+* **Format**: execute [this](https://github.com/shivajiva101/cb-wb01/raw/23.05.0-134/scripts/1_format.sh) script. Make sure you have a microsd plugged in!
   
   ```
   cd ~
